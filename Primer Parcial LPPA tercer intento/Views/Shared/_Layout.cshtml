@@ -3,11 +3,24 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
+
+
 <body>
-    <h1>Pagina Maestra</h1>
-    @RenderBody()
+
+    <div id="Cabecera">
+        <img src="~/Content/Logo.png" />
+        <a href="/Home/Index">Home</a>
+        <a href="/Afiliado/Index">Afiliado</a>
+    </div>
+    <hr color="red" width =" 1000"/>
+    <div id="Principal">
+        @RenderBody()
+    </div>
+    
+
+    <p>Datos LPPA Primer Parcial</p>
 </body>
 </html>
